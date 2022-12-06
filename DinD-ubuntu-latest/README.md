@@ -19,7 +19,7 @@ docker pull siddiquesa/dind-ubuntu-latest:latest
 ```
 docker run -it --rm --privileged siddiquesa/dind-ubuntu-latest:latest bash
 ```
-- Or else follow as below 
+- **Or else** follow as below 
 - clone this repo / folder 
 - change your directory to **_DinD-ubuntu-latest_** 
 ```
@@ -39,7 +39,7 @@ cat /etc/os-release
 ```
 <hr>
 
-#### NOTE: The --privileged option lacks security.
+### NOTE: The --privileged option lacks security.
 <hr>
 
 #### Credits
