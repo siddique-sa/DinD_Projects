@@ -20,5 +20,18 @@ docker build -t <your-image-name> .
 ```
 docker run -it --rm --privileged <your-image-name> bash
 ```
+<hr>
 
 ### Voila ! now you are inside the docker image which has working docker inside it & Ubuntu:latest as base image 
+
+- To check which or what OS you have 
+```
+cat /etc/os-release
+```
+<hr>
+
+#### NOTE: The --privileged option lacks security.
+<hr>
+
+#### Credits
+A huge Thanks & kudos ! to [Carlos](https://github.com/cruizba)
