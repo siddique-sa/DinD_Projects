@@ -10,4 +10,5 @@ for module; do
 done
 
 export PATH='/usr/sbin:/usr/bin:/sbin:/bin'
+
 exec modprobe "$@"

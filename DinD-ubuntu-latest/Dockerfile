@@ -1,4 +1,7 @@
+# If you want a specific version change the below "latest"  tag to desired version taag !
+
 FROM ubuntu:latest
+MAINTAINER sa
 
 RUN apt update \
     && apt install -y ca-certificates openssh-client \
@@ -42,10 +45,13 @@ RUN set -eux; \
 	docker --version
 
 COPY modprobe startup.sh /usr/local/bin/
+
 COPY supervisor/ /etc/supervisor/conf.d/
+
 COPY logger.sh /opt/bash-utils/logger.sh
 
 RUN chmod +x /usr/local/bin/startup.sh /usr/local/bin/modprobe
+
 VOLUME /var/lib/docker
 
 # Docker compose installation
@@ -53,4 +59,5 @@ RUN curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOS
 	&& chmod +x /usr/local/bin/docker-compose && docker-compose version
 
 ENTRYPOINT ["startup.sh"]
+
 CMD ["bash"]
