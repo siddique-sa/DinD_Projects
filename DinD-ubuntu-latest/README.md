@@ -11,6 +11,15 @@
 <hr>
 
 ## Procedure to  use
+- Pull from docker hub 
+```
+docker pull siddiquesa/dind-ubuntu-latest:latest
+```
+- and run it
+```
+docker run -it --rm --privileged siddiquesa/dind-ubuntu-latest:latest bash
+```
+- Or else follow as below 
 - clone this repo / folder 
 - change your directory to **_DinD-ubuntu-latest_** 
 ```
