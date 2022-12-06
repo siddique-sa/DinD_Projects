@@ -1,4 +1,4 @@
-# DinD(Docker in Docker)-Ubuntu-Latest Image
+# DinD(Docker in Docker)-debian-Latest Image
 
 - Docker in Docker solves many pin points simultaneously its picky and hard to bend to our use cases
 - Usually the DinD has alpine as its base image even oficially by **_docker hub_**  
@@ -32,7 +32,7 @@ docker run -it --rm --privileged <your-image-name> bash
 ```
 <hr>
 
-### Voila ! now you are inside the docker image which has working docker inside it & Ubuntu:latest as base image 
+### Voila ! now you are inside the docker image which has working docker inside it & debian:latest as base image 
 
 - To check which or what OS you have 
 ```
