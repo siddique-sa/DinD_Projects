@@ -1,14 +1,11 @@
-name: Build and push Docker image
-
-# on:
-#   schedule:
-#     - cron: '0 0 1 * *' # Run every 1st midnight of evry month.
+name: Build and push Docker images
 
 on:
   push:
     branches:
-      - cicd-test
       - main
+  schedule:
+    - cron: '0 0 1 * *' # Run every 1st midnight of evry month.
 
 jobs:
   build:
@@ -38,7 +35,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-      
+
     - name: Login to Docker Hub
       uses: docker/login-action@v1
       with:
