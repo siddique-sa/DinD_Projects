@@ -1,13 +1,15 @@
 # on:
 #   schedule:
 #     - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
+on:
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: cd to ubuntu-latest
       run: cd /DinD-ubuntu-latest
