@@ -30,7 +30,7 @@ jobs:
     - name: Push Docker image to Docker Hub
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: /home/runner/work/DinD_Projects/DinD_Projects/DinD-ubuntu-latest
         push: true
         tags: |
           siddiquesa/dind-ubuntu-latest:latest
