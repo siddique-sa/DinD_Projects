@@ -22,7 +22,7 @@ jobs:
       run: pwd && ls && cd DinD-ubuntu-latest/ && pwd && ls
 
     - name: Build and tag ubuntu-latest Docker image
-      run: docker build -t siddiquesa/dind-ubuntu-latest:latest .
+      run: docker build -t siddiquesa/dind-ubuntu-latest:latest /home/runner/work/DinD_Projects/DinD_Projects/DinD-ubuntu-latest
 
     # - name: Push Docker image to Docker Hub
     #     uses: docker/build-push-action@v2
