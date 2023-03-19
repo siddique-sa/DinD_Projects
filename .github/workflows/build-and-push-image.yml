@@ -3,8 +3,13 @@ name: Build and push Docker image
 # on:
 #   schedule:
 #     - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
+# on:
+#   workflow_dispatch:
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - cicd-test
+
 
 jobs:
   build:
