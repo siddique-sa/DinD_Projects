@@ -34,4 +34,4 @@ jobs:
         push: true
         tags: |
           siddiquesa/dind-ubuntu-latest:latest
-          siddiquesa/dind-ubuntu-latest:$(date +%Y-%m-%d)
+          siddiquesa/dind-ubuntu-latest:${{ github.run_number }}
