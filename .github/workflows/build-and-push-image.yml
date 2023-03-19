@@ -22,7 +22,7 @@ jobs:
       run: docker build -t siddiquesa/dind-ubuntu-latest:latest /home/runner/work/DinD_Projects/DinD_Projects/DinD-ubuntu-latest
 
     - name: Push Docker image to Docker Hub
-        uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v2
         with:
           context: .
           push: true
