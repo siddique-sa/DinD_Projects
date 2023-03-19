@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: cd to ubuntu-latest
-      run: cd /DinD-ubuntu-latest
+      run: pwd && ls && cd DinD-ubuntu-latest/
 
     - name: Build and tag ubuntu-latest Docker image
       run: docker build -t siddiquesa/dind-ubuntu-latest:latest .
